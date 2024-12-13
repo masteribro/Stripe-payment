@@ -7,8 +7,7 @@ import 'package:http/http.dart' as http;
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
 
-  Stripe.publishableKey =
-  'pk_test_51PaMBcIjLHsJjWOvtX31evcr32zf0SXoWHjdtD7gPfY3wb2oM6czboRDxRqQBkQfPDpLoJxiSOzjlrjlVKMaJbdA00Xjbi1j0A';
+  Stripe.publishableKey = "add your publishable key";
   runApp(const MyApp());
 }
 
@@ -90,7 +89,7 @@ class _MyHomePageState extends State<MyHomePage> {
         Uri.parse("https://api.stripe.com/v1/payment_intents"),
         body: body,
         headers: {
-          "Authorization": "Bearer sk_test_51PaMBcIjLHsJjWOvOi1u4tEDJx1IRqf7N7fVLn6nrhtzfbYIHdeOK5BtdUrwR22uf37z7qeo4wBpnkZVr3e1ASd600RrPFRJlm",
+          "Authorization": "Bearer add secret key here",
           "Content-Type": "application/x-www-form-urlencoded"
         }
       );
